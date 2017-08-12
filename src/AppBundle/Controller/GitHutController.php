@@ -36,6 +36,29 @@ class GitHutController extends Controller
                 'Followers'     => 51,
                 'Following'     => 1,
             ],
+            'repo_count' => 100,
+            'most_stars' => 67,
+            'repos' =>[
+                [
+                    'name' => 'some repository',
+                    'url' => 'google.com',
+                    'stargazers_count'  => 46,
+                    'description' => 'learn simfony 3',
+                ],
+                [
+                    'name' => 'some other',
+                    'url' => 'youtube.com.com',
+                    'stargazers_count'  => 22,
+                    'description' => 'learn someting 3',
+                ],
+                [
+                    'name' => 'gogogle cod',
+                    'url' => 'yahoo.com',
+                    'stargazers_count'  => 11,
+                    'description' => 'placinta cu branza',
+                ],
+
+            ]
         ]);
     }
 

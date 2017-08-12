@@ -1,0 +1,22 @@
+
+    <div class="cards">
+        <div class="card-header">
+            Important Status:
+            <div class="float-right">
+                <span class="badge badge-primary">Repositories: {{ repo_count }}</span>
+                <span class="badge badge-success">Most Stars: {{ most_stars }}</span>
+            </div>
+        </div>
+        <br>
+        <div class="card card-default">
+            <div class="card-header">
+                <h3 class="card-title"> Repo List </h3>
+            </div>
+
+            <ul class="list-group">
+                {% for repo in repos %}
+                    {% include ':githut:repo.html.twig' %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>

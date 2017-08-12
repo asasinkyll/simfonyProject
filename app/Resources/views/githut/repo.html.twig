@@ -1,0 +1,9 @@
+<li class="list-group-item">
+    <a href="{{ repo.url }}">{{ repo.name }}</a>
+    <br>
+    <span class="small">{{ repo.description }}</span>
+    <span class="float-right">
+                                {{ repo.stargazers_count }} <img src="{{ asset('images/icons/glyphicons-50-star.png') }}" style="width: 20px; margin-top: -5px" />
+        {#<i class="glyphicon glyphicon-star"></i>#}
+    </span>
+</li>

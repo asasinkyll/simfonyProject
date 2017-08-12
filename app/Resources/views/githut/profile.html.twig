@@ -1,8 +1,8 @@
 {% block body %}
     <img src="{{ avatar_url }}" class="img-thumbnail"/>
 
-    <h1>{{ name }}</h1>
-    <h1>{{ login }}</h1>
+    <h2>{{ name }}</h2>
+    <h2>{{ login }}</h2>
 
     <hr>
     <ul class="list-unstyled">
@@ -15,11 +15,7 @@
 
     <ul class="list-inline">
         {% for key, data in social_data %}
-            <li class="list-inline-item">
-                <span class="social-media-count">{{ data }}</span>
-                <br>
-                <span class="small muted">{{ key }}</span>
-            </li>
+
         {% endfor %}
     </ul>
 
