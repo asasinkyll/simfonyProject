@@ -3,11 +3,32 @@
     <head>
         <meta charset="UTF-8" />
         <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ asset('css/mystyle.css') }}">
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
+
+        <nav class="navbar navbar-light fixed-top" style="background-color: #e3f2fd; ">
+            <div class="container">
+                <div class="navbar-brander">
+                    <a class="navbar-brand" href="#"> My GitHut</a>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="container">
+
+            <div class="starter-template">
+                <h1>Bootstrap starter template</h1>
+                <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+            </div>
+            {% block body %}{% endblock %}
+        </div><!-- /.container -->
+
+
         {% block javascripts %}{% endblock %}
     </body>
 </html>
